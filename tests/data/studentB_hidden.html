@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>Practice Student Transcript (Self-Test)</title></head>
+<body>
+<h1>Academic History — Practice Student (SID 770001)</h1>
+<p>Practice self-test transcript. Same structure as the graded transcript; different
+credit totals so the practice expected values differ from the graded scenario.</p>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Course</th>
+      <th></th>
+      <th>Grade</th>
+      <th>Term</th>
+      <th>Credits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- COSC-1701 attempted first (retake scenario: same course, two different terms) -->
+    <tr><td>Attempted</td><td>COSC-1701</td><td>Intro CS (first attempt)</td><td>45</td><td>25F</td><td>3</td></tr>
+    <!-- COSC-2406 attempted (planned for retake in 26F per PLAN) -->
+    <tr><td>Attempted</td><td>COSC-2406</td><td>Data Structures (attempt)</td><td>38</td><td>25F</td><td>3</td></tr>
+    <!-- Completed MATH-1056 -->
+    <tr><td>Completed</td><td>MATH-1056</td><td>Calculus I</td><td>72</td><td>25W</td><td>3</td></tr>
+    <!-- Completed COSC-3506 — triggers cross-list violation for planned ITEC-3506 -->
+    <tr><td>Completed</td><td>COSC-3506</td><td>Software Eng</td><td>75</td><td>26W</td><td>3</td></tr>
+    <!-- COSC-1701 retaken and completed — same course different term, counts once in earned -->
+    <tr><td>Completed</td><td>COSC-1701</td><td>Intro CS (retake)</td><td>68</td><td>26W</td><td>3</td></tr>
+    <!-- COSC-3127 is NOT present as Completed -> fires MISSING_PREREQUISITE for planned COSC-4426 -->
+  </tbody>
+</table>
+</body>
+</html>
