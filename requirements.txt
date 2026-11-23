@@ -2,3 +2,5 @@ fastapi
 uvicorn
 python-multipart
 beautifulsoup4
+bcrypt
+PyJWT
